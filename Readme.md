@@ -4,65 +4,75 @@ Lab1 and Lab2 have variable names and classes in Polish. This is incorrect, but 
 
 ---
 
-## Lab 1: System Figur Geometrycznych
+## Lab 1: Geometric Shapes System
 
-**Polecenie:**
-Zaimplementuj system klas reprezentujących figury geometryczne. System powinien zawierać:
-* **Klasę `Figura`**: jako bazę dla wszystkich figur implementującą metodę `toString()`.
-* **Klasy pochodne**: reprezentujące konkretne figury: `Koło`, `Prostokąt`, `Trójkąt`.
-* **Pola statyczne**: zliczające utworzone instancje każdego typu figury.
-* **Metody**: obliczające pole i obwód dla każdej figury.
-
----
-
-## Lab 2: System Zarządzania Sklepem Muzycznym
-
-**Polecenie:**
-Celem zadania jest implementacja systemu do zarządzania asortymentem sklepu muzycznego z wykorzystaniem:
-* Dziedziczenia
-* Polimorfizmu
-* Klas abstrakcyjnych
-* Interfejsów
+**Task:**
+Implement a class hierarchy representing geometric shapes. The system should include:
+* **`Figura` class**: A base class for all shapes implementing the `toString()` method.
+* **Derived classes**: Representing specific shapes: `Koło` (Circle), `Prostokąt` (Rectangle), `Trójkąt` (Triangle).
+* **Static fields**: To count the number of instances created for each shape type.
+* **Methods**: To calculate the area and perimeter for each shape.
 
 ---
 
-## Lab 3: Menadżer Dokumentów
+## Lab 2: Music Store Management System
 
-**Polecenie:**
-Zaprogramuj menadżer dokumentów uwzględniając następujące elementy:
-
-### Dziedziczenie i polimorfizm:
-* **Interfejs:** `Document`
-* **Abstrakcyjna klasa:** `BaseDocument`
-* **Klasa potomna:** `TextDocument`
-
-### Wzorce projektowe:
-* **Singleton:** Klasa `DocumentManager` z metodą `getInstance()`.
-* **Adapter:** Klasa `FileDocumentAdapter` umożliwiająca odczyt dokumentów z pliku.
-    * *Uwaga:* Konstruktor `FileDocumentAdapter` powinien rzucać wyjątek `IOException`.
-
-### Odczyt plików i wyjątków:
-* Wykorzystanie `java.io.FileReader` oraz `java.util.Scanner`.
-* Mechanizm `try-catch` oraz własna obsługa wyjątków `IOException`.
-
-**Dane wejściowe:** Wykorzystaj plik `document.txt`.
+**Task:**
+Implement a management system for a music store's inventory. The project demonstrates the use of:
+* Inheritance and Polymorphism.
+* Abstract classes and Interfaces.
 
 ---
 
-## Lab 4: Stream API i Kolekcje
+## Lab 3: Document Manager
 
-**Polecenie:**
-Odczytaj dane z pliku `products.txt`, a następnie stwórz zestawienia wykorzystując wyłącznie przetwarzanie strumieniowe:
-* Kolekcje i Wyrażenia lambda.
-* **Stream API** oraz referencje do metod.
-* **UWAGA:** Nie wolno używać instrukcji warunkowych `if`.
+**Task:**
+Develop a document manager using the following components:
+
+### Inheritance & Polymorphism:
+* **Interface:** `Document`
+* **Abstract Class:** `BaseDocument`
+* **Child Class:** `TextDocument`
+
+### Design Patterns:
+* **Singleton:** `DocumentManager` class with a `getInstance()` method.
+* **Adapter:** `FileDocumentAdapter` for reading documents from files.
+    * *Note:* The constructor must declare throwing an `IOException`.
+
+### File I/O & Exception Handling:
+* Use of `java.io.FileReader` and `java.util.Scanner` for parsing.
+* Implementation of `try-catch` blocks and custom `IOException` handling.
+
+**Input:** Data is processed using the `document.txt` file.
 
 ---
 
-## Lab X: System Porównywania i Zarządzania
+## Lab 4: Stream API and Collections
 
-**Polecenie:**
-Stwórz zestaw klas i metod statycznych demonstrujących operacje na obiektach, z uwzględnieniem:
-* Klonowania oraz metod klasy `String`.
-* Metod `equals()` oraz `hashCode()` odziedziczonych z klasy `Object`.
-* Mechanizmu refleksji (**Reflection API**).
+**Task:**
+Read data from a `products.txt` file and generate reports using functional programming:
+* Collections and Lambda expressions.
+* **Stream API** and method references.
+* **Constraint:** All operations must use Stream API. The use of `if` statements is strictly prohibited.
+
+---
+
+## Lab 5: Generics and Iterators
+
+**Task:**
+Implement a class structure based on a provided diagram using Java Generics to achieve a specific console output.
+* **Interface `LibraryItem`** and `Book` class.
+* **Generic Class `Container<T extends LibraryItem>`**: Implementing the `Iterable` interface.
+* **Custom Iterator**: Implementation of the `LibraryItemIterator` class.
+* **Sorting**: Implementing custom comparators (`TitleComparator`, `YearComparator`, `AuthorComparator`).
+* **Wildcards**: Using `? extends LibraryItem` in the `LibraryUtils` utility class.
+
+---
+
+## Lab X: Comparison and Management System
+
+**Task:**
+Create a set of classes and static methods demonstrating core Java Object operations:
+* Object cloning and `String` class methods.
+* Overriding `equals()` and `hashCode()` (inherited from the `Object` class).
+* Practical application of the **Reflection API**.
