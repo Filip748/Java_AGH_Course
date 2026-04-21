@@ -57,7 +57,17 @@ Read data from a `products.txt` file and generate reports using functional progr
 
 ---
 
-## Lab 5: Generics and Iterators
+## Lab 5: Comparison and Management System
+
+**Task:**
+Create a set of classes and static methods demonstrating core Java Object operations:
+* Object cloning and `String` class methods.
+* Overriding `equals()` and `hashCode()` (inherited from the `Object` class).
+* Practical application of the **Reflection API**.
+
+---
+
+## Lab 6: Generics and Iterators
 
 **Task:**
 Implement a class structure based on a provided diagram using Java Generics to achieve a specific console output.
@@ -69,10 +79,4 @@ Implement a class structure based on a provided diagram using Java Generics to a
 
 ---
 
-## Lab X: Comparison and Management System
 
-**Task:**
-Create a set of classes and static methods demonstrating core Java Object operations:
-* Object cloning and `String` class methods.
-* Overriding `equals()` and `hashCode()` (inherited from the `Object` class).
-* Practical application of the **Reflection API**.
