@@ -16,7 +16,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         String inputFilePath = "input.txt";
-        String outputFilePath = "output.txt";
+        String outputFilePath = "output2.txt";
 
         FileProcessor fileProcessor = new FileProcessor(inputFilePath, outputFilePath);
         fileProcessor.processFiles();

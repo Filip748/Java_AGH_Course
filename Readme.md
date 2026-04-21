@@ -79,4 +79,15 @@ Implement a class structure based on a provided diagram using Java Generics to a
 
 ---
 
+## Lab 7: Exception Handling and File Processing
+
+**Task:**
+Implement a program to process numerical input from `input.txt` line-by-line, handling specific exceptions as defined in a UML diagram.
+* **Method `processLine(String line, int lineNumber)`**: Must declare and throw all subclasses of the custom `InvalidDataException`.
+* **Resource Management**: Utilize the **try-with-resources** statement for all file I/O operations.
+* **Data Validation**:
+    * Detect non-numeric data using the regular expression `.*\\D.*`.
+    * Handle `NumberFormatException` during string-to-integer conversion.
+* **Reporting**: Use a `StringBuilder` to track the processing status of each line and output the final summary to `output.txt` via a `WriteSummaryToFile` method.
+
 
